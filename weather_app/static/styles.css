@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Poppins:wght@400;600;700;800&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.weather-box {
+    background: #2a2a2a;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    max-width: 360px;
+    width: 100%;
+    min-width: 300px;
+}
+
+.input-section {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #404040;
+}
+
+.input-label {
+    font-size: 0.7rem;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+    font-weight: 700;
+    opacity: 0.8;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid #505050;
+    font-size: 1.1em;
+    font-family: 'Space Mono', monospace;
+    margin-bottom: 15px;
+    background: #3a3a3a;
+    color: #e0e0e0;
+}
+
+button {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: 2px solid #7b5cbe;
+    border-radius: 12px;
+    font-size: 1.2em;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 12px 24px;
+    transition: all 0.2s ease;
+    font-family: 'Space Mono', monospace;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #7a8eea 0%, #8a5cae 100%);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.weather-icon {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.weather-info {
+    color: #00d9ff;
+    font-size: 1.5em;
+    font-family: 'Space Mono', monospace;
+    margin-bottom: 10px;
+}
+
+.weather-desc {
+    color: #e0e0e0;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.temp {
+    color: #00ff88;
+    font-size: 1.8em;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+}
+
+.error {
+    color: #ff6b6b;
+    font-size: 1.1em;
+    margin-top: 10px;
+}
